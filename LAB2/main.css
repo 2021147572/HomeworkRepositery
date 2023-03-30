@@ -1,0 +1,39 @@
+body{
+    padding-left: 0.9%;
+}
+.redColor{
+    background-color: red;
+}
+
+.LGreenC{
+    background-color: lightgreen;
+}
+.LBlueC{
+    background-color: lightblue;
+}
+.btn{
+    text-align: center;
+    width: 7%;
+}
+a {
+    color: black;
+    text-decoration: none;
+    padding-left: 0.9%;
+ }
+
+.blackBorderWidth {
+    border-width: 10;
+    color: black;
+}
+
+.separator {
+    border-bottom: 2px solid black;
+    width: 80%;
+    padding-left: 0.9%;
+}
+
+
+.welcomeTitle {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 250%;
+}

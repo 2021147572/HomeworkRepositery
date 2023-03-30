@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>로그인</title>  
+  </head>
+  <body>
+    <h1 class = "welcomeTitle"> Welcome To INTERNET-PROGRAMMING WORKSHOP</h1>
+    <label><a href = "login.html">로그인</a></label>
+    <br>
+    <br>
+    <div class="separator"></div>
+    <br>
+    <p>회원 정보 (필수)</p>
+    <form method="post" autocomplete= "on" action="www.example.com">
+        <p><label> 유저 아이디: 
+            <input name = "name" type = "text" size = "25" placeholder="아이디 입력하세요" required/></label>
+        </p>
+        <p><label> 비밀번호: 
+            <input type="password" name="password" minlength="8" maxlength="16" placeholder = "비밀번호 입력하세요" required></label>
+        </p>
+        <p><label> 비밀번호 확인: 
+            <input type="password" name="password" minlength="8" maxlength="16" placeholder = "비밀번호 확인" required></label>
+        </p>
+        <p>
+            <strong> 대학교 </strong><br>
+            <label> 연세대학교 <input type="checkbox" name="myUniversityCB" value="Yonsei University" checked> </label>
+            <label> 고려대학교 <input type="checkbox" name="myUniversityCB" value="Korea University"> </label>
+            <label> 서울대학교 <input type="checkbox" name="myUniversityCB" value="Seoul University"> </label>
+            <label> 서강대학교  <input type="checkbox" name="myUniversityCB" value="SogangUniversity"> </label>
+        </p>
+        <p>
+            <input name ="submit" type = "submit" value="로그인"  class="btn LGreenC"/>
+            <input name ="join" type = "submit" value="회원가입"  class="btn LBlueC"/>
+        </p>
+    </form>
+    <div class="separator"></div>
+
+  </body>
+</html>

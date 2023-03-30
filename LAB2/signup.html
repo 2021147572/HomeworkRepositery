@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>SignUp</title>  
+  </head>
+  <body>
+    <h1 class = "welcomeTitle"> <strong>Welcome To INTERNET-PROGRAMMING WORKSHOP</strong></h1>
+
+    <label><a href = "login.html">로그인</a></label>
+    <label><a href = "signup.html">회원가입</a></label>
+    <br>
+    <br>
+    <div class="separator"></div>
+    <br>
+    <br>
+
+    <label>개인정보 (필수)</label>
+
+    <form method="post" action="www.example.com">
+        <p><label> 이름: 
+            <input class = "blackBorderWidth" name = "name" type = "text" size = "25" placeholder="이름을 쓰기" required/></label>
+        </p>
+
+        <p>
+            <label> 생일: <input name = "name" type = "date" /></label>
+        </p>
+
+        <p>
+            <label> 학년: <input name = "number" type = "number" min="0" max="4" step="1"/></label>
+        </p>
+        <p>
+            <label>전화번호: <input name="tel" type="tel" placeholder="(###) ###-####" pattern="\(\d{3}\) \d{3}-\d{4}"></label>
+        </p>
+ 
+        <p>
+            <label> 좋아하는 색깔: <input name ="color" type = "color" autofocus/></label>
+        </p>
+        <p>
+            <strong> 어느 대학교에 다니세요? </strong><br>
+            <label> 연세대학교  <input type="radio" name="myUniversity" value="Yonsei University" checked> </label>
+            <label> 고려대학교 <input type="radio" name="myUniversity" value="Korea University"> </label>
+            <label> 서울대학교 <input type="radio" name="myUniversity" value="Seoul University"> </label>
+            <label> 서강대학교 <input type="radio" name="myUniversity" value="SogangUniversity"> </label>
+        </p>
+        <p>
+            <input name ="submit" type = "submit" value="Sign up"  class="btn LGreenC"/>
+            <input name ="reset" type = "reset" value="Cancel"  class="btn redColor"/>
+        </p>
+    </form>
+
+    <div class="separator"></div>
+
+  </body>
+</html>
