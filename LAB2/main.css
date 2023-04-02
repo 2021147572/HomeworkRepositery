@@ -1,5 +1,7 @@
 body{
     padding-left: 0.9%;
+    height: auto;
+    margin: 0;
 }
 .redColor{
     background-color: red;
@@ -37,3 +39,4 @@ a {
     font-family: 'Courier New', Courier, monospace;
     font-size: 250%;
 }
+<!mari heightn>
