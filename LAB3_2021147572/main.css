@@ -1,0 +1,138 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+/* Set the maximum width for the container */
+.container {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;;
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  header {
+    text-align: center;
+    margin-top: 50px;
+    overflow: hidden; /* Add this to hide the sliding text when it goes beyond the container */
+  }
+  
+  .header-text {
+    display: inline-block;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; /* Add this to stop the animation at the end state */
+  }
+  
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+  }
+  
+  .product img {
+    width: 100%;
+    transition: transform 2s; /* Add the transition property for enlarging the image */
+  }
+  
+  .product:hover img {
+    transform: scale(1.1); /* Enlarge the image when hovered */
+  }
+  
+  .product-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    transition: visibility 0s linear 0.2s; /* Delay the visibility transition */
+    font-size: 2em;
+    color:white
+  }
+  
+  .product:hover .product-name {
+    visibility: visible;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nested-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  
+  /* Add your product and form styles here */
+  
+/* Other CSS styles go here */
+
+/* Media query for screen width up to 480px */
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .nested-flex-container {
+    flex-direction: column;
+  }
+}
+
+/* Media query for screen width between 481px and 800px */
+@media (min-width: 481px) and (max-width: 800px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nested-flex-container {
+    flex-direction: column;
+  }
+}
+
+/* Media query for screen width greater than 801px */
+@media (min-width: 801px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nested-flex-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+  
