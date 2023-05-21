@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-commerce</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="productOperations.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Welcome to our E-commerce Store</h1>
+    <a href="login.html">Login</a> | <a href="signup.html">Sign up</a>
+</header>
+<div class="search-section">
+    <input type="text" id="search-input" placeholder="Search for products..."/>
+    <select id="category-input">
+        <option value="">All Categories</option>
+        <option value="Category 1">Category 1</option>
+        <option value="Category 2">Category 2</option>
+        <option value="Category 3">Category 3</option>
+    </select>
+    <select id="sort-input">
+        <option value="">Sort By</option>
+        <option value="price">Price</option>
+        <option value="name">Name</option>
+    </select>
+</div>
+<div id="product-container"></div>
+<div id="product-description"></div>
+</body>
+</html>
